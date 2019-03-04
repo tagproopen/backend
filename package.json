@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "ssh": "ssh -i general.pem ubuntu@ec2-52-53-208-204.us-west-1.compute.amazonaws.com",
     "start": "node server.js"
   },
   "author": "",

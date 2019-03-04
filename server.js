@@ -5,5 +5,10 @@ app.listen(2000);
 console.log("Server started.");
 
 io.sockets.on('connection', function(socket) {
-	console.log('connected!');
+	console.log('connected!', new Date());
+
+	socket.on('signIn', function(data) {
+		socket.emit('startGame', data);
+	})
+	
 })
